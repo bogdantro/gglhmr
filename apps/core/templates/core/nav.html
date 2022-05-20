@@ -1,0 +1,123 @@
+{% load static %}
+
+<!-- SCRIPTS -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script rel="stylesheet" src="{% static '/js/nav.js' %}" type="text/javascript"></script>
+<!-- LINKS -->
+<link rel="stylesheet" href="{% static '/scss/store/nav.css' %}" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<div id="topHeader">
+    <p>Adr: Kirkegata 72 - Lillehammer</p>
+</div>
+<div id="mobileNav">
+    <!-- LOGO -->
+    <div class="logo" onclick="window.location.href='/'">
+        <img class="logo1" src="{% static '/images/logo/logo1.png' %}" alt="logo1">
+    </div>
+    <!-- INFO -->
+    <div class="info">
+        <a class="info-a" href="/info">Info</a>
+    </div>
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger" onclick="menu()">
+        <span class="upper-span"></span>
+        <span class="center-span"></span>
+        <span class="lower-span"></span>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <!-- UL -->
+        <ul class="sidebar-ul">
+            <!-- LINKS -->
+            <li class="sidebar-li" id="sidebarLi">
+                <div class="infonav dropdown">
+                    <a onclick="infoDrop()" id="infoToggle" class="nav-drop-toggle">Info<i class="fas fa-sort-down"></i></a>
+                    <div class="infonav dropdown-links" id="infoDropdown">
+                        <div class="nav-link-parent">
+                            <a href="/apningstider">Åpnngstider</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/regler">Regler</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/om-oss">Om oss</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/sponsorer">Sponsorer</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/foreldre-info">Foreldre info</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/blogg">Blogg</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services dropdown">
+                    <a onclick="servicesDrop()" id="servicesToggle" class="nav-drop-toggle">Tjenester<i class="fas fa-sort-down"></i></a>
+                    <div class="services dropdown-links" id="servicesDropdown">
+                        <div class="nav-link-parent">
+                            <a href="/leie-lokalet">Leie av lokalet</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/skoleundervisning">Skoleundervisning</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/lan-og-bd">Bursdag/LAN</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/leie-utstyr">Utleie av utstyr</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="esport dropdown">
+                    <a onclick="esportDrop()" id="esportToggle" class="nav-drop-toggle">E-sport<i class="fas fa-sort-down"></i></a>
+                    <div class="esport dropdown-links" id="esportDropdown">
+                        <div class="nav-link-parent">
+                            <a href="/spill-og-konsoller">Spill & Konsoller</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/esport-galleri">Galleri</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/turneringer">Turneringer</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/e-sport-events">Arrangementer</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/e-sport-kurser">Kurs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="art dropdown">
+                    <a onclick="artDrop()" id="artToggle" class="nav-drop-toggle">Kunst<i class="fas fa-sort-down"></i></a>
+                    <div class="art dropdown-links" id="artDropdown">
+                        <div class="nav-link-parent">
+                            <a href="/vår-avdeling">Vår avdeling</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/kunst-kurs">Kurs og aktiviteter</a>
+                        </div>
+                        <div class="nav-link-parent">
+                            <a href="/kunst-galleri">Galleri</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/priser">Priser</a>
+                <a class="mobilenav-contact" href="/kontakt-oss">Kontakt oss</a>
+            </li>   
+        </ul>
+    </div>
+</div>

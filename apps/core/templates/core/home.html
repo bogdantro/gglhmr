@@ -1,0 +1,187 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<script rel="stylesheet" src="{% static '/js/home.js' %}" type="text/javascript"></script>
+<link rel="stylesheet" href="{% static '/scss/store/base.css' %}" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<!-- COVER -->
+<div class="cover" id="cover">
+    <!-- ALL COVER CONENT -->
+    <div class="content">
+       <!-- COVER SECTION 1 -->
+       <div class="cover-section1">
+          <!-- ALL COVER TEXT -->
+          <div class="text">
+             <h1 class="cover-h1">Det Sosiale er Viktig</h1>
+             <p class="cover-p">Utforsk lokalet våres hvor vi tilbyr et trygt sosialt miljø for alle aldre. Stort utvalg av gaming og kunst finner du her også</p>
+             <!-- ALL COVER ACTIONS -->
+             <div class="cover-actions">
+                 <button href="/bestill">Kom i gang</button>
+                </div>
+            </div>
+       </div>
+       <!-- COVER SECTION 2 -->
+       <div class="cover-section2">
+           <!-- VIDEO -->
+           <div class="video">
+            <iframe src="https://www.youtube.com/embed/vY41sAT_SjY?start=2"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+           </div>
+       </div>
+    </div>
+ </div>
+<!-- INTRO -->
+<div class="intro">
+    <div class="content">
+        <div class="card">
+            <h1>25+</h1>
+            <p>Gaming Utstyr</p>
+        </div>
+        <div class="card">
+            <h1>400</h1>
+            <p>Medlemer</p>
+        </div>
+        <div class="card">
+            <h1>5</h1>
+            <p>Kurser per uke</p>
+        </div>
+        <div class="card">
+            <h1>12</h1>
+            <p>Ansatte</p>
+        </div>
+    </div>
+</div>
+<div class="border-div intro-why">
+    <div class="line"></div>
+ </div>
+<!-- WHY GGLHMR -->
+<div class="why-gglhmr">
+    <!-- HALF SQUARE -->
+    <div class="content">
+       <!-- WHY WEBISER TEXT -->
+       <div class="text">
+          <p class="why-gglhmr-headingp">Hvorfor Oss?</p>
+          <h1>Vi Fokuserer På Det Sosiale</h1>
+          <!-- LONG TEXT -->
+          <p class="why-gglhmr-long-ptext">
+             Top tier gaming-utstyr som garanterer optimal gaming opplevelse.
+             Spill eller chill sammen med venner,
+             dere kan velge fra 200+ spill, så det er alltid noe å gjøre.
+          </p>
+       </div>
+    </div>
+ </div>
+ <div class="border-div why-explore">
+    <div class="line"></div>
+ </div>
+ <!-- EXPLORE -->
+ <div class="explore">
+     <!-- CONTENT -->
+     <div class="content">
+    <!-- EXPLORE TEXT -->
+    <div class="text">
+        <p class="explore-headingp">utforsk lokalet</p>
+        <h1>Bli Kjent Med Lokalet</h1>
+     </div>
+     <!-- SLIDESHOW -->
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="transition: .3s;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+           <!-- ITEM -->
+          <div class="carousel-item active">
+               <!-- QUOTE CONTENT -->
+              <div class="content">
+                 <!-- IMG -->
+                 <div class="img">
+                    <img src="{% static '/images/diverse/37601706_10161187274415131_848253584238706688_n.jpg' %}" alt="">
+                 </div>
+              </div>
+          </div>
+          <!-- ITEM -->
+          <div class="carousel-item">
+              <!-- QUOTE CONTENT -->
+              <div class="content">
+                 <!-- IMG -->
+                 <div class="img">
+                    <img src="{% static '/images/diverse/37601706_10161187274415131_848253584238706688_n.jpg' %}" alt="">
+                 </div>
+              </div>
+          </div>
+          <!-- ITEM -->
+          <div class="carousel-item">
+              <!-- QUOTE CONTENT -->
+              <div class="content">
+                 <!-- IMG -->
+                 <div class="img">
+                    <img src="{% static '/images/diverse/37601706_10161187274415131_848253584238706688_n.jpg' %}" alt="">
+                 </div>
+              </div>
+          </div>
+          <!-- ITEM -->
+          <div class="carousel-item">
+              <!-- QUOTE CONTENT -->
+              <div class="content">
+                 <!-- IMG -->
+                 <div class="img">
+                    <img src="{% static '/images/diverse/37601706_10161187274415131_848253584238706688_n.jpg' %}" alt="">
+                 </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ <div class="border-div explore-after-school">
+    <div class="line"></div>
+ </div>
+ <!-- AFTER SCHOOL -->
+ <div class="after-school">
+     <!-- CONTENT -->
+     <div class="content">
+        <!-- TEXT -->
+        <div class="text">
+        <p class="after-school-headingp">sfo</p>
+        <h1>Perfekt Alternativ  For SFO</h1>
+        <!-- LONG TEXT -->
+        <p class="after-school-long-ptext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestias. Quia provident placeat sapiente, dignissimos eaque quibusdam soluta deleniti, ipsam tempore autem ad amet neque pariatur? Voluptates nesciunt repudiandae saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestias. Quia provident placeat sapiente, dignissimos eaque quibusdam soluta deleniti, ipsam tempore autem ad amet neque pariatur? Voluptates nesciunt repudiandae saepe.
+        </p>
+     </div>
+    </div>
+ </div>
+ <div class="border-div after-school-ukens-turnering">
+    <div class="line"></div>
+ </div>
+ <!-- ukens turnering -->
+ <div class="ukens-turnering">
+     <!-- content -->
+     <div class="content">
+        <!-- TEXT -->
+        <div class="text">
+            <p class="ukens-turnering-headingp">turneringer</p>
+            <h1>Ukens Turnering!</h1>
+            <p class="ukens-turnering-long-ptext">
+                Kom innom lokalet for å delta på ukens turnering, og få sjangsen til å vinne premier!
+            </p>
+        </div>
+        <!-- image -->
+        <img src="{% static '/images/diverse/280386168_536662064653503_5093268720383911840_n.jpg' %}" alt="">
+     </div>
+ </div>
+{% endblock %}
